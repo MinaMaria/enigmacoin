@@ -716,7 +716,7 @@
           </sizepolicy>
          </property>
          <property name="text">
-          <string>Balance:</string>
+          <string></string>
          </property>
         </widget>
        </item>

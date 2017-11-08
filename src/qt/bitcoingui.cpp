@@ -342,13 +342,13 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(receiveCoinsAction);
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
-	toolbar->setStyleSheet("QToolBar{background-image:url(:images/menu);background-repeat: repeat-n;border:none;font-family:'Open Sans,sans-serif'; }");
+    toolbar->setStyleSheet("QToolBar{background-image:url(:images/menu);background-position: top right;background-repeat: repeat-xy;border:none;font-family:'Open Sans,sans-serif'; }");
 
     QToolBar *toolbar2 = addToolBar(tr("Actions toolbar"));
     toolbar2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
 	toolbar2->setMovable( false );
     toolbar2->addAction(exportAction);
-	toolbar2->setStyleSheet("QToolBar{background-image:url(:images/eni);border:none;background-repeat: repeat-n;font-family:'Open Sans,sans-serif'; }");
+    toolbar2->setStyleSheet("QToolBar{background-image:url(:images/eni);border:none;background-repeat: repeat-n;font-family:'Open Sans,sans-serif'; }");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)

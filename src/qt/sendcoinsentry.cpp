@@ -170,5 +170,6 @@ void SendCoinsEntry::updateDisplayUnit()
     {
         // Update payAmount with the current unit
         ui->payAmount->setDisplayUnit(model->getOptionsModel()->getDisplayUnit());
+		ui->payAmount->setStyleSheet("QLabel { color: grey; }");
     }
 }

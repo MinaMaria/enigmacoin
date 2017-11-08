@@ -356,6 +356,7 @@ void SendCoinsDialog::setBalance(qint64 balance, qint64 stake, qint64 unconfirme
 
     int unit = model->getOptionsModel()->getDisplayUnit();
     ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance));
+	ui->labelBalance->setStyleSheet("QLabel { color: gray; }");
 }
 
 void SendCoinsDialog::updateDisplayUnit()
@@ -364,6 +365,7 @@ void SendCoinsDialog::updateDisplayUnit()
     {
         // Update labelBalance with the current balance and the current unit
         ui->labelBalance->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(), model->getBalance()));
+		ui->labelBalance->setStyleSheet("QLabel { color: gray;}");
     }
 }
 
