@@ -8,7 +8,7 @@
 
 	<--::--|  2 COIN PER BLOCK 
 
-	<--::--|  M MAX.COINS    
+	<--::--|  5MILLIONS MAX.COINS    
 
 	<--::--|  PREMINE: 1%    
 
